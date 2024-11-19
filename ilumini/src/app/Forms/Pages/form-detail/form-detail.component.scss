@@ -1,0 +1,86 @@
+.details-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-header h1 {
+  font-size: 2em;
+  color: #007bff;
+}
+
+.form-header p {
+  font-size: 1.2em;
+  color: #555;
+  margin-top: 10px;
+}
+
+.loading,
+.error,
+.no-data {
+  text-align: center;
+  font-size: 1.2em;
+  color: #555;
+  margin-top: 20px;
+}
+
+.error {
+  color: red;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+.question h3 {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.options label {
+  display: block;
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.options input[type="radio"] {
+  margin-right: 10px;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 1em;
+  text-align: center;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn.submit-btn {
+  margin-top: 20px;
+}
+
+.btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.btn:hover:not(:disabled) {
+  background-color: #218838;
+}

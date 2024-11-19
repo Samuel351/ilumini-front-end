@@ -1,0 +1,92 @@
+/* Container Principal */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #007bff, #6610f2);
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Título */
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Descrição */
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #f0f0f0;
+}
+
+/* Botões */
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1em;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+/* Botão Primário */
+.primary-btn {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.primary-btn:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* Botão Secundário */
+.secondary-btn {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.secondary-btn:hover {
+  background-color: #5a6268;
+  transform: scale(1.05);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.9em;
+  }
+}

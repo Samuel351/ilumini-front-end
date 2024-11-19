@@ -1,0 +1,26 @@
+<div class="details-container">
+  <div class="form-header">
+    <h1>{{ form.name }}</h1>
+    <p>{{ form.description }}</p>
+  </div>
+
+  @for (question of form.questions; track $index) {
+    <div class="question">
+      <h3>{{ question.statement }}</h3>
+        @for (option of question.options; track $index) {
+          <div class="options">
+            <label>
+              <input
+                type="radio"
+                [name]="'question_' + question.id"
+                [value]="option.id"
+                required>
+              {{ option.statement }}
+            </label>
+          </div>
+        }
+    </div>
+  }
+
+  <button type="submit" class="btn submit-btn" [disabled]="!isFormValid()">Enviar Respostas</button>
+</div>
