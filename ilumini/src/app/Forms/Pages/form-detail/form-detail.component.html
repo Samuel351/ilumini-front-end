@@ -1,12 +1,12 @@
 <div class="details-container">
   <div class="form-header">
-    <h1>{{ form.name }}</h1>
-    <p>{{ form.description }}</p>
+    <h1>{{ myForm?.name }}</h1>
+    <p>{{ myForm?.description }}</p>
   </div>
 
-  @for (question of form.questions; track $index) {
+  @for (question of myForm?.questions; track $index) {
     <div class="question">
-      <h3>{{ question.statement }}</h3>
+      <h3>{{$index+1}}º {{ question.statement }}</h3>
         @for (option of question.options; track $index) {
           <div class="options">
             <label>
@@ -22,5 +22,9 @@
     </div>
   }
 
-  <button type="submit" class="btn submit-btn" [disabled]="!isFormValid()">Enviar Respostas</button>
+  <div style="display: flex; gap: 1rem;">
+    <button>Lançar formulário</button>
+    <button class="btn btn-blue">Editar</button>
+    <button type="submit" class="btn submit-btn" routerLink="/form">Voltar</button>
+  </div>
 </div>

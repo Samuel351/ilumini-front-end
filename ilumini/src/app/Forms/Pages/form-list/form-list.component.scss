@@ -76,7 +76,11 @@ h1 {
 }
 
 .edit-btn {
-  background-color: #007bff;
+  background-color: red;
+}
+
+.launch-btn{
+  background-color: burlywood;
 }
 
 .edit-btn:hover {
@@ -95,4 +99,11 @@ h1 {
 
 .error {
   color: red;
+}
+
+.create-button{
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: row;
+  justify-content: center;
 }

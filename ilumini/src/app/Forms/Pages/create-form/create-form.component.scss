@@ -1,0 +1,168 @@
+/* Contêiner principal */
+.form-container {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Título do formulário */
+.form-title-input {
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+}
+
+.form-title-input:focus {
+  border-bottom: 2px solid #007bff;
+}
+
+/* Descrição */
+.form-description-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+}
+
+/* Card de perguntas */
+.question-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.question-input {
+  width: 80%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.question-input:focus {
+  border-color: #007bff;
+}
+
+.question-type {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-left: 10px;
+}
+
+/* Botão para remover pergunta */
+.remove-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background: #c82333;
+}
+
+/* Botão para adicionar pergunta */
+.add-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Rodapé do formulário */
+.form-footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.save-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background-color: #218838;
+}
+
+.save-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Escala Likert */
+.likert-scale {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.likert-scale label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.likert-scale input {
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+/* Estilo para os itens arrastáveis */
+cdkDrag {
+  cursor: grab;
+}
+
+cdkDrag:active {
+  cursor: grabbing;
+}
+
+.cdk-drag-preview {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cdk-drag-placeholder {
+  opacity: 0.5;
+}
+
+/* Estilo geral para as perguntas */
+.question-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.add-question{
+  display: flex;
+  justify-content: center;
+}
